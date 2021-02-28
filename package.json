@@ -10,6 +10,7 @@
     "pwa:asset": "npx vue-pwa-asset-generator -a public/img/logo.svg --no-manifest"
   },
   "dependencies": {
+    "@vueuse/core": "^4.3.1",
     "bulma": "^0.9.2",
     "core-js": "^3.9.0",
     "marked": "^2.0.1",

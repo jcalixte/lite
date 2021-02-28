@@ -11,13 +11,18 @@
         />
       </div>
     </div>
-    <textarea
-      name="note"
-      id="note"
-      class="textarea is-info is-large has-fixed-size note-content"
-      v-model="noteContent"
-      required
-    ></textarea>
+    <div class="field">
+      <div class="control">
+        <textarea
+          name="note"
+          id="note"
+          class="textarea is-info is-large has-fixed-size note-content"
+          v-model="noteContent"
+          required
+        ></textarea>
+      </div>
+    </div>
+
     <button type="submit" class="button is-primary">create</button>
   </form>
 </template>
@@ -38,6 +43,11 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .note-form {
+  .control {
+    max-width: 750px;
+    margin: auto;
+  }
+
   textarea {
     height: 50vh;
     margin-bottom: 2rem;
